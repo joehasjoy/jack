@@ -1,0 +1,219 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#pass_app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+::-webkit-scrollbar {
+  width: 6px; /*对垂直流动条有效*/
+  height: 6px; /*对水平流动条有效*/
+}
+
+/*定义滚动条的轨道颜色、内阴影及圆角*/
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ededed;
+  border-radius: 3px;
+}
+
+/*定义滑块颜色、内阴影及圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  box-shadow: inset 0 0 6px rgba(17, 13, 13, 0.1);
+  background-color: #535353;
+  opacity: 0.8;
+}
+
+/*定义两端按钮的样式*/
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/*定义右下角汇合处的样式*/
+::-webkit-scrollbar-corner {
+  background: #ededed;
+}
+
+::-ms-scrollbar {
+  width: 6px; /*对垂直流动条有效*/
+  height: 6px; /*对水平流动条有效*/
+}
+
+/*定义滚动条的轨道颜色、内阴影及圆角*/
+::-ms-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ededed;
+  border-radius: 3px;
+}
+
+/*定义滑块颜色、内阴影及圆角*/
+::-ms-scrollbar-thumb {
+  border-radius: 7px;
+  box-shadow: inset 0 0 6px rgba(17, 13, 13, 0.1);
+  background-color: #535353;
+  opacity: 0.8;
+}
+
+/*定义两端按钮的样式*/
+::-ms-scrollbar-button {
+  display: none;
+}
+
+/*定义右下角汇合处的样式*/
+::-ms-scrollbar-corner {
+  background: #ededed;
+}
+
+::-moz-scrollbar {
+  width: 6px; /*对垂直流动条有效*/
+  height: 6px; /*对水平流动条有效*/
+}
+
+/*定义滚动条的轨道颜色、内阴影及圆角*/
+::-moz-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ededed;
+  border-radius: 3px;
+}
+
+/*定义滑块颜色、内阴影及圆角*/
+::-moz-scrollbar-thumb {
+  border-radius: 7px;
+  box-shadow: inset 0 0 6px rgba(17, 13, 13, 0.1);
+  background-color: #535353;
+  opacity: 0.8;
+}
+
+/*定义两端按钮的样式*/
+::-moz-scrollbar-button {
+  display: none;
+}
+
+/*定义右下角汇合处的样式*/
+::-moz-scrollbar-corner {
+  background: #ededed;
+}
+
+// ::-webkit-scrollbar {
+//   display: none; /* Chrome Safari */
+// }
+// ::-ms-scrollbar {
+//   display: none; /* IE 10+ */
+// }
+// ::-moz-scrollbar {
+//   display: none; /* Gecko内核，例如火狐浏览器 */
+// }
+//main-container全局样式
+// .app-main {
+//   min-height: 100%;
+// }
+
+.app-container {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+.flex-1{
+  display: flex;
+  flex: 1;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-start-center{
+  display: flex;
+  justify-content: center;
+}
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-align-items-center {
+  align-items: center;
+}
+.flex-justify-content-center {
+  justify-content: center;
+}
+.flex-justify-content-between {
+  justify-content: space-between;
+}
+.flex-justify-content-end {
+  justify-content: flex-end;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}

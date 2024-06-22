@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>研发工作台</title>
+    <script src="/static/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script>
+      if (window.location.href.indexOf('iComeApproval') !== -1){
+	      localStorage.setItem('isAuthLogin', 'is') // 不改变main.js降级登录的逻辑，多set一次localStorage
+	      localStorage.setItem('iComeApproval', 'is') // 用于main.js判断设置header
+      }else
+	    if (window.location.href.indexOf('authLogin') == -1) {   <!-- 与参与者中心解耦降级登录判断 -->
+				// 如果没有 authLoginToken 就登录sdk
+				if (!localStorage.getItem('authLoginToken')){
+                    localStorage.setItem('isAuthLogin', 'no')
+                }else{
+                    localStorage.setItem('isAuthLogin', 'is')
+                }
+	    }else {
+            localStorage.setItem('isAuthLogin', 'is')
+        }
+    </script>
+    
+<!--    <script src="https://plantformcdn.fanneng.com/js/ennAuthSdk/1.0.3/enn-auth-sdk.min.js"></script>-->
+        <script id="flag"></script>
+      <script src="/env_config.js"></script>
+  </head>
+  <body>
+    <div id="pass_app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+

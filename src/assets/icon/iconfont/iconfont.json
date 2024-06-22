@@ -1,0 +1,65 @@
+{
+  "id": "2534642",
+  "name": "enn",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-enn-",
+  "description": "新奥项目",
+  "glyphs": [
+    {
+      "icon_id": "19570659",
+      "name": "重启",
+      "font_class": "zhongqi",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "7603874",
+      "name": "喇叭",
+      "font_class": "laba",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "8629396",
+      "name": "操作系统",
+      "font_class": "caozuoxitong",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "11168305",
+      "name": "基本信息",
+      "font_class": "jibenxinxi",
+      "unicode": "ea66",
+      "unicode_decimal": 60006
+    },
+    {
+      "icon_id": "15927950",
+      "name": "网络设置",
+      "font_class": "000-wangluoshezhi-05",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "18941209",
+      "name": "配置",
+      "font_class": "peizhi",
+      "unicode": "e87b",
+      "unicode_decimal": 59515
+    },
+    {
+      "icon_id": "21053781",
+      "name": "MySQL",
+      "font_class": "mysql",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    },
+    {
+      "icon_id": "3876165",
+      "name": "redis",
+      "font_class": "redis",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    }
+  ]
+}
